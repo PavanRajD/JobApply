@@ -2,8 +2,8 @@ from flask import Flask, render_template, request, jsonify, Response, stream_wit
 import os
 import uuid
 
-from dice_applier import DiceJobBoard
-from utils import get_user_sent_ids, save_user_sent_ids
+from scripts.dice_applier import DiceJobBoard
+from scripts.utils import get_user_sent_ids, save_user_sent_ids
 
 app = Flask(__name__)
 app.secret_key = "sample_key"  # Set a secret key for sessions
