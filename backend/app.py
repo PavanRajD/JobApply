@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify, Response, stream_wit
 import os
 import uuid
 
-from DiceJobBoard import DiceJobBoard
+from dice_applier import DiceJobBoard
 from utils import get_user_sent_ids, save_user_sent_ids
 
 app = Flask(__name__)
