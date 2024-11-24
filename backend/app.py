@@ -41,6 +41,9 @@ def submit_job_data():
         resume_file = request.files['resume']
         
         # Generate a unique filename and save the resume
+        if not os.path.exists('uploads'):
+            os.makedirs('uploads')
+            
         resume_filename = os.path.join("uploads", f"{session['user_id']}_{resume_file.filename}")
         resume_file.save(resume_filename)
 
