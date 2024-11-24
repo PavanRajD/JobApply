@@ -2,7 +2,7 @@ import json
 from bs4 import BeautifulSoup
 import requests
 
-from backend.scripts.JobBoard import JobBoard
+from scripts.JobBoard import JobBoard
 
 class DiceJobBoard(JobBoard):
     def __init__(self):
